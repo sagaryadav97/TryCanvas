@@ -6,6 +6,17 @@
   height: 40vmin;
   pointer-events: none;
 }
+.Canvas{
+  width: 800px;
+  height: 800px;
+  margin: 0 auto;
+  background-color: #444;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
