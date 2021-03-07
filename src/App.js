@@ -29,14 +29,19 @@ function App() {
   const ctx = ctxobj.getContext('2d')
   function Box(){
     ctx.beginPath();
+    ctx.font = '25px serif red';
+    ctx.textBaseline = 'middle';
+    ctx.strokeText('Railfest', MoveOptone.x, MoveOptone.y);
     ctx.fillStyle = 'red';
-    ctx.fillRect(MoveOptone.x, MoveOptone.y, 10, 10);
+
   }
 
   function Box_green(){
     ctx.beginPath();
     ctx.fillStyle = 'green';
-    ctx.fillRect(MoveOptone.x, MoveOptone.y, 10, 10);
+    ctx.font = '25px serif';
+    ctx.textBaseline = 'middle';
+    ctx.strokeText('Sparepay', MoveOptone.x, MoveOptone.y);
   }
 
 
@@ -44,17 +49,19 @@ function App() {
   {
     ctx.beginPath();
     ctx.fillStyle = 'purple';
-    ctx.arc(MoveCircle.x,MoveCircle.y,10,0, Math.PI * 2);
-    ctx.fill();
-    ctx.save(); 
+    ctx.font = '25px serif';
+    ctx.textBaseline = 'middle';
+    ctx.strokeText('Anikeths Project', MoveOptone.x, MoveOptone.y);
+    
   }
   function ball_blue()
   {
     ctx.beginPath();
     ctx.fillStyle = 'blue';
-    ctx.arc(MoveCircle.x,MoveCircle.y,10,0, Math.PI * 2);
-    ctx.fill();
-    ctx.save(); 
+    ctx.font = '25px serif';
+    ctx.textBaseline = 'middle';
+    ctx.strokeText('redkhan Project', MoveOptone.x, MoveOptone.y);
+    
   }
 
   // Box()
@@ -160,7 +167,7 @@ function App() {
   }, [opt])
   return (
     <div className="App">
-      <h2>Canvas Example</h2>
+      <h2>Bugs And Error Projects</h2>
       <canvas ref={curref} id="canvas" className="Canvas"></canvas>
     </div>
   );
